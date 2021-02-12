@@ -1,23 +1,14 @@
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.scss";
 
 import Button from "react-bootstrap/Button";
 import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
-
-
-  
-
-
-
-
-
   return (
     <div className="App">
       <div className="container-fluid cont-cards ">
         <div className="row row-cards ">
-         
           <div className="col-lg-4 margin  ">
             <motion.div
               className="card col-xs-6 col-lg-4 col-6 "
@@ -58,14 +49,8 @@ function App() {
                   </tr>
                 </tbody>
               </table>
-             
-              <Button 
-              
-              className="start">
-              
-              
-              Get Started</Button>
-             
+
+              <Button className="start">Get Started</Button>
             </motion.div>
           </div>
           <div className="col-lg-4 margin ">
