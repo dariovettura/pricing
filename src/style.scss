@@ -1,0 +1,105 @@
+$animate: color 0.25s ease-in-out, background-color 0.25s ease-in-out,
+  border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+
+$bgcolor: #f8f9fa !important;
+
+body {
+  background-color: $bgcolor;
+}
+
+.cont-cards {
+  min-height: 100vh;
+  justify-content: center !important;
+  display: flex !important;
+}
+.row-cards {
+  align-self: center;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  text-align: center;
+
+  padding: 30px;
+  min-height: 420px;
+  min-width: 290px;
+  border: 0px;
+  transition: $animate;
+}
+.margin {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card:hover {
+  background-color: RGB(63, 135, 245);
+  size: 120%;
+}
+.card:hover .start {
+  background-color: #fff;
+  color: RGB(63, 135, 245);
+}
+
+.table td {
+  border-bottom: 1px solid #dee2e6;
+  border-top: 0px;
+}
+.table tr:last-of-type .feature,
+.table tr:last-of-type .duration {
+  border-bottom: 0px;
+  border-top: 0px;
+}
+.start {
+  background-color: RGB(63, 135, 245);
+  border-color: RGB(63, 135, 245) !important;
+  font-size: 0.8em;
+  font-weight: bold;
+  transition: $animate;
+}
+
+/* Tipografy */
+
+.title {
+  transition: $animate;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+.price {
+  transition: $animate;
+  font-size: 2.4em;
+  margin-bottom: 30px;
+}
+.price span {
+  transition: $animate;
+  font-size: 0.5em;
+  color: #dee2e6;
+  margin-left: -8px;
+  opacity: 1;
+}
+td {
+  transition: $animate;
+  font-size: 0.6em;
+}
+.feature {
+  transition: $animate;
+  text-align: start;
+  color: #c5c9ce;
+  font-weight: bold;
+}
+
+.card:hover .feature,
+.card:hover .title,
+.card:hover .price,
+.card:hover .duration {
+  opacity: 1;
+  color: #fff;
+  transition: $animate;
+}
+.duration {
+  transition: $animate;
+  text-align: end;
+  font-weight: bold;
+  opacity: 0.8;
+}
